@@ -1,0 +1,1 @@
+127.0.0.1 - - [04/Apr/2020:19:21:27 +0000] "POST /wp-cron.php?doing_wp_cron=1586028087.9395198822021484375000 HTTP/1.0" 200 0 "http://ika2020.local/wp-cron.php?doing_wp_cron=1586028087.9395198822021484375000" "WordPress/5.4; http://ika2020.local"
