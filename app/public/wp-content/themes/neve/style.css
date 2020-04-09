@@ -3258,5 +3258,8 @@ body.menu_sidebar_slide_left.menu_sidebar_dropdown:before {
 .builder-item--footer_copyright .component-wrap {
   display: inline;
 }
-
+div#header-grid {
+    position: fixed!important;
+    width: 100%!important;
+}
 /*# sourceMappingURL=style.css.map */

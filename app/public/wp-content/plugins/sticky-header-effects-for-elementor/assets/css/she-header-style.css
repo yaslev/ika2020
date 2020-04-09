@@ -4,13 +4,13 @@ Header Style
 
 -------------------------------------------------------------------*/
 
-.header {    
+.header{    
 
   z-index:99;
 
   width: 100%;
 
-  
+  position: fixed;
 
 }
 
@@ -79,7 +79,7 @@ Header Style
 .elementor-editor-active .she-header-transparent-yes {
 
 	position:relative;
-
+  
 }
 
 
