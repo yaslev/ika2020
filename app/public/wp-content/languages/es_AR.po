@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-26 07:27:41+0000\n"
+"PO-Revision-Date: 2020-04-15 12:49:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1745,7 +1745,7 @@ msgstr "Agregar:"
 msgid "Whether posts of this status may have floating published dates."
 msgstr "Si las entradas de este estado pueden tener fechas variables de publicación."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:392
+#: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:415
 msgid "Sorry, you are not allowed to delete revisions of this post."
 msgstr "Lo siento, no tenés permisos para borrar las revisiones de esta entrada."
 
@@ -8941,7 +8941,7 @@ msgstr "Anteriores"
 
 #: wp-login.php:855 wp-login.php:1366 wp-includes/general-template.php:463
 msgid "Username or Email Address"
-msgstr "Nombre de usuario o dirección de correo"
+msgstr "Nombre de usuario o correo electrónico"
 
 #. translators: %s: "Search WordPress.org themes" button text.
 #: wp-includes/customize/class-wp-customize-themes-section.php:102
@@ -11798,7 +11798,7 @@ msgstr "Selección múltiple"
 
 #. translators: %s: Taxonomy label, %l: List of terms formatted as per
 #. $term_template.
-#: wp-includes/taxonomy.php:4341
+#: wp-includes/taxonomy.php:4343
 msgid "%s: %l."
 msgstr "%s: %l."
 
@@ -15588,7 +15588,7 @@ msgstr "Falta la hoja de estilo."
 msgid "The parent theme is missing. Please install the \"%s\" parent theme."
 msgstr "No encontramos el tema principal. Por favor, instala el tema principal \"%s\"."
 
-#: wp-includes/taxonomy.php:4414
+#: wp-includes/taxonomy.php:4416
 msgid "Invalid object ID."
 msgstr "ID de objeto no válido."
 
