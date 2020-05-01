@@ -39,13 +39,17 @@ if ( ! function_exists( 'hestia_team' ) ) :
 		$section_is_empty     = empty( $hestia_team_title ) && empty( $hestia_team_subtitle ) && empty( $hestia_team_content );
 
 		$hide_section = get_theme_mod( 'hestia_team_hide', false );
-
-		/* Don't show section if Disable section is checked or it doesn't have any content. Show it if it's called as a shortcode */
+		$section_style        = '';
+		/**
+		 * Don't show section if Disable section is checked or it doesn't have any content.
+		 * Show it if it's called as a shortcode.
+		 */
 		if ( ( $is_shortcode === false ) && ( $section_is_empty || (bool) $hide_section === true ) ) {
 			if ( is_customize_preview() ) {
-				echo '<section class="hestia-team" id="team" data-sorder="hestia_team" style="display: none"></section>';
+				$section_style = 'style="display: none"';
+			} else {
+				return;
 			}
-			return;
 		}
 
 		$wrapper_class   = $is_shortcode === true ? 'is-shortcode' : '';
@@ -61,7 +65,7 @@ if ( ! function_exists( 'hestia_team' ) ) :
 
 		hestia_before_team_section_trigger();
 		?>
-		<section class="hestia-team <?php echo esc_attr( $wrapper_class ); ?>" id="team" data-sorder="hestia_team">
+		<section class="hestia-team <?php echo esc_attr( $wrapper_class ); ?>" id="team" data-sorder="hestia_team" <?php echo wp_kses_post( $section_style ); ?>>
 			<?php
 			hestia_before_team_section_content_trigger();
 			if ( function_exists( 'hestia_display_customizer_shortcut' ) && $is_shortcode === false ) {
@@ -270,22 +274,22 @@ function hestia_get_team_default() {
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb908674e06',
 								'link' => 'facebook.com',
-								'icon' => 'fa-facebook',
+								'icon' => 'fab fa-facebook-f',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb9148530ft',
 								'link' => 'plus.google.com',
-								'icon' => 'fa-google-plus',
+								'icon' => 'fab fa-google-plus-g',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb9148530fc',
 								'link' => 'twitter.com',
-								'icon' => 'fa-twitter',
+								'icon' => 'fab fa-twitter',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb9150e1e89',
 								'link' => 'linkedin.com',
-								'icon' => 'fa-linkedin',
+								'icon' => 'fab fa-linkedin-in',
 							),
 						)
 					),
@@ -301,22 +305,22 @@ function hestia_get_team_default() {
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb9155a1072',
 								'link' => 'facebook.com',
-								'icon' => 'fa-facebook',
+								'icon' => 'fab fa-facebook-f',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb9160ab683',
 								'link' => 'twitter.com',
-								'icon' => 'fa-twitter',
+								'icon' => 'fab fa-google-plus-g',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb9160ab484',
 								'link' => 'pinterest.com',
-								'icon' => 'fa-pinterest',
+								'icon' => 'fab fa-twitter',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb916ddffc9',
 								'link' => 'linkedin.com',
-								'icon' => 'fa-linkedin',
+								'icon' => 'fab fa-linkedin-in',
 							),
 						)
 					),
@@ -332,22 +336,22 @@ function hestia_get_team_default() {
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb917e4c69e',
 								'link' => 'facebook.com',
-								'icon' => 'fa-facebook',
+								'icon' => 'fab fa-facebook-f',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb91830825c',
 								'link' => 'twitter.com',
-								'icon' => 'fa-twitter',
+								'icon' => 'fab fa-google-plus-g',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb918d65f2e',
 								'link' => 'linkedin.com',
-								'icon' => 'fa-linkedin',
+								'icon' => 'fab fa-twitter',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb918d65f2x',
 								'link' => 'dribbble.com',
-								'icon' => 'fa-dribbble',
+								'icon' => 'fab fa-linkedin-in',
 							),
 						)
 					),
@@ -363,22 +367,22 @@ function hestia_get_team_default() {
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb925cedcg5',
 								'link' => 'github.com',
-								'icon' => 'fa-github-square',
+								'icon' => 'fab fa-facebook-f',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb925cedcb2',
 								'link' => 'facebook.com',
-								'icon' => 'fa-facebook',
+								'icon' => 'fab fa-google-plus-g',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb92615f030',
 								'link' => 'twitter.com',
-								'icon' => 'fa-twitter',
+								'icon' => 'fab fa-twitter',
 							),
 							array(
 								'id'   => 'customizer-repeater-social-repeater-57fb9266c223a',
 								'link' => 'linkedin.com',
-								'icon' => 'fa-linkedin',
+								'icon' => 'fab fa-linkedin-in',
 							),
 						)
 					),

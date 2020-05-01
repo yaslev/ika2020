@@ -1,0 +1,91 @@
+[HTTP] Binding to address: :1080
+Creating API v1 with WebPath: 
+Creating API v2 with WebPath: 
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+Got message in APIv2 websocket channel
+[APIv2] BROADCAST /api/v2/websocket
+Got message in APIv1 event stream
+Sending content: {
+  "ID": "8oIRX7bCLtz1FffzDU82VWTzIEHrJDBtGDKRf7IiMmg=@mailhog.example",
+  "From": {
+    "Relays": null,
+    "Mailbox": "www-data",
+    "Domain": "80cc498732ef",
+    "Params": ""
+  },
+  "To": [
+    {
+      "Relays": null,
+      "Mailbox": "mailhog",
+      "Domain": "flywheel.local",
+      "Params": ""
+    }
+  ],
+  "Content": {
+    "Headers": {
+      "Content-Transfer-Encoding": [
+        "8bit"
+      ],
+      "Content-Type": [
+        "text/plain; charset=UTF-8"
+      ],
+      "Date": [
+        "Fri, 1 May 2020 15:54:43 +0000"
+      ],
+      "From": [
+        "WordPress \u003cwordpress@ika2020.local\u003e"
+      ],
+      "MIME-Version": [
+        "1.0"
+      ],
+      "Message-ID": [
+        "\u003c23266467f43c6810ae8f73f3a4874073@ika2020.local\u003e"
+      ],
+      "Received": [
+        "from localhost by mailhog.example (MailHog)\r\n          id 8oIRX7bCLtz1FffzDU82VWTzIEHrJDBtGDKRf7IiMmg=@mailhog.example; Fri, 01 May 2020 15:54:43 +0000"
+      ],
+      "Return-Path": [
+        "\u003cwww-data@80cc498732ef\u003e"
+      ],
+      "Subject": [
+        "[ika2020] Tu sitio ha sido actualizado a WordPress 5.4.1"
+      ],
+      "To": [
+        "miltonimven93@gmail.com"
+      ],
+      "X-Mailer": [
+        "PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)"
+      ],
+      "X-PHP-Originating-Script": [
+        "1000:class-phpmailer.php"
+      ]
+    },
+    "Body": "¡Hola! Tu sitio http://7f120b08.ngrok.io ha sido actualizado automáticamente a WordPress 5.4.1.\r\n\r\nNo es necesaria ninguna acción adicional por tu parte. Para más información sobre la versión 5.4.1 revisa la pantalla Acerca de WordPress:\r\nhttp://7f120b08.ngrok.io/wp-admin/about.php\r\n\r\nSi tienes algún problema o necesitas ayuda, los voluntarios en los foros de soporte WordPress.org pueden ayudarte.\r\nhttps://wordpress.org/support/forums/\r\n\r\nTambién tienes algunos plugins o temas con actualizaciones disponibles. Actualizalos ahora:\r\nhttp://7f120b08.ngrok.io/wp-admin/\r\n\r\nEl equipo de WordPress\r\n",
+    "Size": 1061,
+    "MIME": null
+  },
+  "Created": "2020-05-01T15:54:43.54304879Z",
+  "MIME": null,
+  "Raw": {
+    "From": "www-data@80cc498732ef",
+    "To": [
+      "mailhog@flywheel.local"
+    ],
+    "Data": "To: miltonimven93@gmail.com\r\nSubject: [ika2020] Tu sitio ha sido actualizado a WordPress 5.4.1\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 1 May 2020 15:54:43 +0000\r\nFrom: WordPress \u003cwordpress@ika2020.local\u003e\r\nMessage-ID: \u003c23266467f43c6810ae8f73f3a4874073@ika2020.local\u003e\r\nX-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n¡Hola! Tu sitio http://7f120b08.ngrok.io ha sido actualizado automáticamente a WordPress 5.4.1.\r\n\r\nNo es necesaria ninguna acción adicional por tu parte. Para más información sobre la versión 5.4.1 revisa la pantalla Acerca de WordPress:\r\nhttp://7f120b08.ngrok.io/wp-admin/about.php\r\n\r\nSi tienes algún problema o necesitas ayuda, los voluntarios en los foros de soporte WordPress.org pueden ayudarte.\r\nhttps://wordpress.org/support/forums/\r\n\r\nTambién tienes algunos plugins o temas con actualizaciones disponibles. Actualizalos ahora:\r\nhttp://7f120b08.ngrok.io/wp-admin/\r\n\r\nEl equipo de WordPress\r\n",
+    "Helo": "localhost"
+  }
+}
+
+[APIv1] BROADCAST /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events

@@ -24,20 +24,6 @@ class CSS_Handler extends Base_CSS {
 	public static $instance = null;
 
 	/**
-	 * Rest route namespace.
-	 *
-	 * @var CSS_Handler
-	 */
-	public $namespace = 'themeisle-gutenberg-blocks/';
-
-	/**
-	 * Rest route version.
-	 *
-	 * @var CSS_Handler
-	 */
-	public $version = 'v1';
-
-	/**
 	 * Initialize the class
 	 */
 	public function init() {
@@ -282,8 +268,8 @@ class CSS_Handler extends Base_CSS {
 		$compressor->setPcreBacktrackLimit( 3000000 );
 		$compressor->setPcreRecursionLimit( 150000 );
 
-		$css = $compressor->run( $css );
 		$css = htmlspecialchars_decode( $css );
+		$css = $compressor->run( $css );
 
 		return $css;
 	}

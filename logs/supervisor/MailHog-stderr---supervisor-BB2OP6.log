@@ -1,0 +1,67 @@
+2020/05/01 15:49:20 Using in-memory storage
+2020/05/01 15:49:20 [SMTP] Binding to address: 0.0.0.0:1025
+2020/05/01 15:49:20 Serving under http://:1080/
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Starting session
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Received 16 bytes: 'EHLO localhost\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: ESTABLISH] In ESTABLISH state
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Sent 21 bytes: '250-Hello localhost\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Sent 16 bytes: '250-PIPELINING\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Received 35 bytes: 'MAIL FROM:<www-data@80cc498732ef>\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@80cc498732ef>
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@80cc498732ef>'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: MAIL] In MAIL state
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Sent 37 bytes: '250 Sender www-data@80cc498732ef ok\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: RCPT] In RCPT state
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: RCPT] Got RCPT command
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Received 6 bytes: 'DATA\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: RCPT] Processing line: DATA
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: RCPT] In RCPT state
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: RCPT] Got DATA command, switching to DATA state
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Received 1024 bytes: 'To: miltonimven93@gmail.com\r\nSubject: [ika2020] Tu sitio ha sido actualizado a WordPress 5.4.1\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 1 May 2020 15:54:43 +0000\r\nFrom: WordPress <wordpress@ika2020.local>\r\nMessage-ID: <23266467f43c6810ae8f73f3a4874073@ika2020.local>\r\nX-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n¡Hola! Tu sitio http://7f120b08.ngrok.io ha sido actualizado automáticamente a WordPress 5.4.1.\r\n\r\nNo es necesaria ninguna acción adicional por tu parte. Para más información sobre la versión 5.4.1 revisa la pantalla Acerca de WordPress:\r\nhttp://7f120b08.ngrok.io/wp-admin/about.php\r\n\r\nSi tienes algún problema o necesitas ayuda, los voluntarios en los foros de soporte WordPress.org pueden ayudarte.\r\nhttps://wordpress.org/support/forums/\r\n\r\nTambién tienes algunos plugins o temas con actualizaciones disponibles. Actualizalos ahora:\r\nhttp://7f120b08.ngrok.io/'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Received 42 bytes: 'wp-admin/\r\n\r\nEl equipo de WordPress\r\n\r\n.\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2020/05/01 15:54:43 Parsing Content from string: 'To: miltonimven93@gmail.com
+Subject: [ika2020] Tu sitio ha sido actualizado a WordPress 5.4.1
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Fri, 1 May 2020 15:54:43 +0000
+From: WordPress <wordpress@ika2020.local>
+Message-ID: <23266467f43c6810ae8f73f3a4874073@ika2020.local>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+¡Hola! Tu sitio http://7f120b08.ngrok.io ha sido actualizado automáticamente a WordPress 5.4.1.
+
+No es necesaria ninguna acción adicional por tu parte. Para más información sobre la versión 5.4.1 revisa la pantalla Acerca de WordPress:
+http://7f120b08.ngrok.io/wp-admin/about.php
+
+Si tienes algún problema o necesitas ayuda, los voluntarios en los foros de soporte WordPress.org pueden ayudarte.
+https://wordpress.org/support/forums/
+
+También tienes algunos plugins o temas con actualizaciones disponibles. Actualizalos ahora:
+http://7f120b08.ngrok.io/wp-admin/
+
+El equipo de WordPress
+'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Storing message 8oIRX7bCLtz1FffzDU82VWTzIEHrJDBtGDKRf7IiMmg=@mailhog.example
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Sent 80 bytes: '250 Ok: queued as 8oIRX7bCLtz1FffzDU82VWTzIEHrJDBtGDKRf7IiMmg=@mailhog.example\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Received 6 bytes: 'QUIT\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: MAIL] Processing line: QUIT
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Sent 9 bytes: '221 Bye\r\n'
+2020/05/01 15:54:43 [SMTP 127.0.0.1:57084] Session ended

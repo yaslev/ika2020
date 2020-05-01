@@ -32,13 +32,15 @@ if ( ! function_exists( 'hestia_features' ) ) :
 		$hestia_features_subtitle = get_theme_mod( 'hestia_features_subtitle', $default_subtitle );
 		$hestia_features_content  = get_theme_mod( 'hestia_features_content', $default_content );
 		$section_is_empty         = empty( $hestia_features_content ) && empty( $hestia_features_subtitle ) && empty( $hestia_features_title );
+		$section_style            = '';
 
 		/* Don't show section if Disable section is checked or it doesn't have any content. Show it if it's called as a shortcode */
 		if ( $is_shortcode === false && ( $section_is_empty || (bool) $hide_section === true ) ) {
 			if ( is_customize_preview() ) {
-				echo '<section class="hestia-features" id="features" data-sorder="hestia_features" style="display: none"></section>';
+				$section_style = 'style="display: none"';
+			} else {
+				return;
 			}
-			return;
 		}
 
 		if( function_exists( 'maybe_trigger_fa_loading' ) ) {
@@ -54,7 +56,7 @@ if ( ! function_exists( 'hestia_features' ) ) :
 
 		hestia_before_features_section_trigger();
 		?>
-		<section class="hestia-features <?php echo esc_attr( $wrapper_class ); ?>" id="features" data-sorder="hestia_features">
+		<section class="hestia-features <?php echo esc_attr( $wrapper_class ); ?>" id="features" data-sorder="hestia_features" <?php echo $section_style; ?>>
 			<?php
 			hestia_before_features_section_content_trigger();
 			if ( $is_shortcode === false && function_exists( 'hestia_display_customizer_shortcut' ) ) {
@@ -193,21 +195,21 @@ function hestia_get_features_default() {
 		json_encode(
 			array(
 				array(
-					'icon_value' => 'fa-wechat',
+					'icon_value' => 'fab fa-weixin',
 					'title'      => esc_html__( 'Responsive', 'themeisle-companion' ),
 					'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'themeisle-companion' ),
 					'link'       => '#',
 					'color'      => '#e91e63',
 				),
 				array(
-					'icon_value' => 'fa-check',
+					'icon_value' => 'fas fa-check',
 					'title'      => esc_html__( 'Quality', 'themeisle-companion' ),
 					'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'themeisle-companion' ),
 					'link'       => '#',
 					'color'      => '#00bcd4',
 				),
 				array(
-					'icon_value' => 'fa-support',
+					'icon_value' => 'far fa-life-ring',
 					'title'      => esc_html__( 'Support', 'themeisle-companion' ),
 					'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'themeisle-companion' ),
 					'link'       => '#',
